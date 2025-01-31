@@ -1,0 +1,45 @@
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    box-shadow: 0 0 0 2px;
+    font-size: 40pt;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    color: black;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: auto;
+}
+
+#gameContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#restartBtn {
+    font-size: 16pt;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+body {
+    background-color: gray;
+    color: white;
+}
+
+#restartBtn:hover {
+    background-color: orange;
+    transform: scale(1.1);
+}
